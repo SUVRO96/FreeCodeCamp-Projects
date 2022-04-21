@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Survey Form</h1>
+      </header>
+      <form id="survey-form">
+        <div class="name element">
+          <label for="name" id="name-label">Name:</label>
+          <input
+            class="input-place"
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="email element">
+          <label for="email" id="email-label">Email:</label>
+          <input
+            class="input-place"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="age element">
+          <label for="age" id="number-label">Age(optional):</label>
+          <input
+            class="input-place"
+            type="number"
+            id="number"
+            name="age"
+            placeholder="age"
+            min="18"
+            max="60"
+          />
+        </div>
+        <div class="status element">
+          <p>Select your current status:</p>
+          <select name="dropdown" id="dropdown">
+            <option value="student">Student</option>
+            <option value="employee">Employee</option>
+            <option value="learner">Learner</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="coding">
+          <p>Do you like coding?</p>
+          <div class="answer">
+            <div class="radio-input">
+              <label>
+                <input
+                  type="radio"
+                  name="coding"
+                  value="definitely"
+                  checked
+                />Definitely
+              </label>
+            </div>
+            <div class="radio-input">
+              <label>
+                <input
+                  class="radio-input"
+                  type="radio"
+                  name="coding"
+                  value="maybe"
+                />Maybe
+              </label>
+            </div>
+            <div class="radio-input">
+              <label>
+                <input
+                  class="radio-input"
+                  type="radio"
+                  name="coding"
+                  value="not sure"
+                />Not sure
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <p>Skills:</p>
+          <div class="skill-answer">
+            <label>
+              <input type="checkbox" value="Java" name="skill" />Java
+            </label>
+            <label>
+              <input type="checkbox" value="CSS" name="skill" />CSS
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                value="JavaScript"
+                name="skill"
+              />JavaScript
+            </label>
+          </div>
+        </div>
+        <div class="comment element">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            class="input-place"
+            style="height: 20px"
+            id="comments"
+            name="comment"
+            placeholder="Enter your comments here."
+          ></textarea>
+        </div>
+        <div class="submit element">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
